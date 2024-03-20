@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in page</title>
+    <style >
+        body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 80%;
+    background: rgb(253,187,45);
+background: linear-gradient(0deg, rgba(253,187,45,1) 24%, rgba(34,193,195,1) 67%);
+}
+#container{
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 25px;
+    height: 45vh;
+    width: 45vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.80);
+}
+#top{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15%;
+    font-weight: 500;
+    font-size: larger;
+}
+#inp {
+    font-weight: 500;
+    height: 35%;
+   width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    padding: 3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#but{
+    
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    width: 80%;
+    justify-content: space-between;
+}
+.last{
+    width: 40%;
+    border: 0.15rem solid;
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <div id="box">
+                <div id="top">
+                    Welcome
+                </div>
+                <div id="inp">
+                    <label for="name" id="name">Name</label>
+                    <input id="name" required type="text" placeholder="Your name">
+                    <label for="password" id="password">Password</label>
+                    <input required placeholder="Your Password" type="password">
+                </div>
+                <div id="but">
+                    <input class="last" type="reset">
+                    <input class="last" type="submit">
+                    
+                </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
